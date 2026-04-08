@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Forecast</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="interior-styles.css" />
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="phone-screen">
+            <div class="interior-screen">
+                <img src="" alt="Sky" class="sky-photo" id="skyPhoto" />
+                <div class="interior-content" id="interiorContent">
+
+                    <div class="record-title-block">
+                        <div class="record-name" id="recordName"></div>
+                        <div class="record-artist-year" id="recordArtistYear"></div>
+                    </div>
+
+                    <div class="data-row" id="dataRow">
+                        <button class="panel-toggle" id="panelToggle">&gt;</button>
+                        <div class="weather-stats">
+                            <span class="weather-line">
+                                <strong>Temp.</strong><span class="slash">/</span><span id="wTemp"></span>
+                            </span>
+                            <span class="weather-line">
+                                <strong>Visibility</strong><span class="slash">/</span><span id="wVisibility"></span>
+                            </span>
+                            <span class="weather-line">
+                                <strong>Pressure</strong><span class="slash">/</span><span id="wPressure"></span>
+                            </span>
+                            <span class="weather-line">
+                                <strong>Sky</strong><span class="slash">/</span><span id="wSky"></span>
+                            </span>
+                        </div>
+                        <div class="weather-desc">
+                            <p id="wDesc"></p>
+                        </div>
+                    </div>
+
+                    <div class="waveform-wrap">
+                        <div class="waveform">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+
+                    <div class="bottom-nav">
+                        <span class="strip-label">Slide</span>
+                        <div class="strip-wrap">
+                            <div class="temp-strip" id="tempStrip"></div>
+                            <div class="temp-pill" id="tempTriangle"></div>
+                        </div>
+                    </div>
+
+                    <div class="interior-nav">
+                        <button class="interior-hamburger" id="interiorHamburger" aria-label="Menu">
+                            <span></span><span></span><span></span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="menu-backdrop" id="menuBackdrop"></div>
+                <div class="menu-drawer" id="menuDrawer">
+                    <div class="menu-header">
+                        <span class="menu-title">All Records</span>
+                        <button class="menu-close" id="menuClose">✕</button>
+                    </div>
+                    <ul class="menu-list" id="menuList">
+                        <li><a href="index.html">← Back to Map</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="records-data.js"></script>
+    <script src="interior-script.js"></script>
+</body>
+</html>
